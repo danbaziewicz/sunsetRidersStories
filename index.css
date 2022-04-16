@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: 'Rye', cursive;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #fb960a;
+    border-radius: 3rem;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon-header {
+    width: 9%;
+    padding-left: 1%;
+}
+
+.poster-home {
+    width: 45%;
+    height: 45%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 3%;
+}
+
+.game-text {
+    display: flex;
+    width: 50%;
+}
+
+.game-img {
+    display: flex;
+}
+
+.characters {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    padding: 2%;
+}
+
+.tamanho-poster {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.characters h3 {
+    padding-top: 20%;
+}
+
+.img-properties {
+    width: 70%;
+    border-radius: 5px;
+}
+
+.img-properties:hover {
+    transform: scale(1.02, 1.02);
+}
+
+#div-play-button {
+    padding-top: 1%;
+    padding-bottom: 5%;
+}
+
+.play-button {
+    width: 100px;
+    height: 30px;
+    font-size: larger;
+    background-color: #c12a38;
+    border: none;
+    border-radius: 7px;
+    color: #f69803;
+}
+
+.play-button:hover {
+    transform: scale(1.2, 1.2);
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    bottom: 0;
+    position: fixed;
+}
