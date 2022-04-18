@@ -14,20 +14,19 @@
 
 <body>
     <header>
-        <!-- <img class="icon-header" src="./images/snescontrolicon.png" alt="Icone controle SNES"> -->
         <h1>Sunset Riders: Stories</h1>
     </header>
 
     <main>
-        
+
         <h3>Entre nessa aventura e ajude os cowboys mais famosos dos arcades a completarem suas caçadas</h3>
-        <img class="poster-home" src="./images/sunset-riders-poster.jpg">
+        <div class="div-poster-home">
+            <img class="poster-home" src="./images/sunset-riders-poster.jpg">
+        </div>
         <h3>Escolha um dos personagens abaixo</h3>
         <div class="container">
             <div class="characters">
-                <div class="tamanho-poster">
                     <img class="img-properties" src="./images/steve.png" alt="Steve - Sunset Riders">
-                </div>
                 <span>
                     <h3 class="steve-txt">Steve</h3>
                 </span>
@@ -46,11 +45,11 @@
             </div>
         </div>
         <div id="div-play-button">
-            <input class="play-button" type="submit" value="PLAY" onclick="">
+            <input class="play-button" type="submit" value="PLAY" onclick="playGame()">
         </div>
     </main>
 
-    <footer>
+    <footer class="fixed-footer">
         <span>Desenvolvido por Danylo Baziewicz - Para fins estritamente didáticos.</span>
     </footer>
     <script src="./game.js"></script>
