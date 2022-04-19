@@ -101,22 +101,31 @@ main {
 }
 
 #div-play-button {
+    display: flex;
+    gap: 10px;
     padding-top: 1%;
     padding-bottom: 5%;
 }
 
 .play-button {
-    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    width: 130px;
     height: 30px;
     font-size: larger;
     background-color: #c12a38;
     border: none;
-    border-radius: 7px;
+    border-radius: 20px;
     color: #f69803;
+    font-family: 'Rye', cursive;
 }
 
 .play-button:hover {
     transform: scale(1.2, 1.2);
+    cursor: pointer;
 }
 
 .fixed-footer {
