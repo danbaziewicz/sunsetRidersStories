@@ -24,8 +24,7 @@ function playGame() {
     if (choice === '1') {
         location.href = './/steveGame/steve.html';
     } else if (choice === '2') {
-        alert('Em desenvolvimento. Jogue com Steve ou Cormano');
-        //location.href = './/bobGame/bob.html';
+        location.href = './/bobGame/bob.html';
     } else if (choice === '3') {
         location.href = './/cormanoGame/cormano.html';
     }
@@ -40,6 +39,10 @@ function goHome() {
 
 function redirctCormano() {
     location.href = './cormano-ending.html';
+}
+
+function redirctBob() {
+    location.href = './bob-ending.html';
 }
 
 function selectChoiceCormano() {
@@ -101,13 +104,13 @@ function selectChoiceBob() {
         choice = prompt(bobStories[position]);
     }
 
-    if ((position === 0 || position === 1) && choice === '1') {
+    if ((position === 3) && choice === '1') {
         validate = true;
-    } else if ((position === 0 || position === 1) && choice === '2') {
+    } else if ((position === 3) && choice === '2') {
         validate = false;
-    } else if (position === 2 && choice === '2') {
+    } else if ((position === 2 || position === 4 || position === 0 || position === 1) && choice === '2') {
         validate = true;
-    } else if (position === 2 && choice === '1') {
+    } else if ((position === 2 || position === 4 || position === 0 || position === 1) && choice === '1') {
         validate = false;
     }
 
