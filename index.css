@@ -187,12 +187,6 @@ footer a {
     #game-img-steve-3 {
         width: 100%;
     }
-}
-
-@media (max-width: 425px) {
-    .game-text {
-        width: 80%;
-    }
 
     .characters-footer {
         position: relative;
@@ -200,6 +194,12 @@ footer a {
 
     .fixed-footer {
         position: relative;
+    }
+}
+
+@media (max-width: 425px) {
+    .game-text {
+        width: 80%;
     }
 
     .poster-home {
