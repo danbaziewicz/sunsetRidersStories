@@ -52,19 +52,27 @@ main {
     width: 600px;
 }
 
+.index-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    padding-top: 3%;
+}
+
 .container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    
+    flex-wrap: wrap;
     padding-top: 3%;
 }
 
 .game-text {
     display: flex;
     width: 50%;
+    text-align: justify;
 }
 
 .game-text-cormano-ending {
@@ -75,6 +83,10 @@ main {
 
 .game-img {
     display: flex;
+}
+
+#container-gif-game {
+    width: 100%;
 }
 
 #game-img-steve-3 {
@@ -91,6 +103,7 @@ main {
 
 .characters h3 {
     padding-top: 20%;
+    font-size: 1em;
 }
 
 .img-properties {
@@ -152,4 +165,48 @@ main {
 footer a {
     text-decoration: none;
     color: #ffffff;
+}
+
+@media (max-width: 2000px) {
+    .game-text {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 1600px) {
+    .game-text {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    .game-text {
+        width: 60%;
+    }
+
+    #game-img-steve-3 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .game-text {
+        width: 80%;
+    }
+
+    .characters-footer {
+        position: relative;
+    }
+
+    .fixed-footer {
+        position: relative;
+    }
+
+    .poster-home {
+        width: 100%;
+    }
+
+    .game-text-cormano-ending {
+        width: 90%;
+    }
 }
